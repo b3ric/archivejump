@@ -3,7 +3,8 @@ const knownPaywalledSites = [
     'washingtonpost.com',
     'wsj.com',
     'bloomberg.com',
-    'economist.com'
+    'economist.com',
+    'folha.uol.com.br'
   ];
   
   const currentUrl = window.location.href;
