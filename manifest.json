@@ -1,18 +1,16 @@
 {
-    "manifest_version": 3,
-    "name": "ArchiveJump",
-    "version": "1.0",
-    "description": "Instantly jump to an archived version",
-    "permissions": ["activeTab", "scripting"],
-    "action": {
-      "default_title": "ArchiveJump"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"],
-        "run_at": "document_idle"
-      }
-    ]
-  }
-  
+  "manifest_version": 3,
+  "name": "ArchiveJump",
+  "version": "1.0",
+  "description": "Instantly jump to an archived version",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.folha.uol.com.br/*",
+        "*://*.lequipe.fr/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
